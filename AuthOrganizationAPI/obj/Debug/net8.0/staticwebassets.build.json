@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZOmmMteN2M5Bs6wzBhPTU5oD9UR5u/iseqp8dif2kg8=",
+  "Source": "AuthOrganizationAPI",
+  "BasePath": "_content/AuthOrganizationAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
