@@ -12,11 +12,5 @@ namespace AuthOrganizationAPI.Models.Entities
         public string LastName { get; set; }
         public ICollection<UserOrganization> UserOrganizations { get; set; }
 
-
-        // public string Id { get; set; } = Guid.NewGuid().ToString();
-        //  public string UserName { get; set; }
-        //  public string Email { get; set; }
-        // public string Phone { get; set; }
-
     }
 }

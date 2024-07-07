@@ -1,9 +1,11 @@
-﻿using AuthOrganizationAPI.Helpers;
+﻿using AuthOrganizationAPI.ExceptionHandler;
+using AuthOrganizationAPI.Helpers;
 using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
 using AuthOrganizationAPI.Repositories;
 using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AuthOrganizationAPI.Services
 {
@@ -27,10 +29,12 @@ namespace AuthOrganizationAPI.Services
             return Utilities.GetPaged(organizations, pageNumber, pageSize);
         }
 
+
         public async Task CreateOrganizationAsync(Organization organization)
         {
             await _orgRepository.CreateOrganizationAsync(organization);
         }
+
 
         public async Task<Organization> GetOrganizationByIdAsync(string orgId, string userId)
         {
@@ -39,18 +43,63 @@ namespace AuthOrganizationAPI.Services
         }
 
 
-
-
-        public async Task<Organization> CreateOrganizationAsync(Organization org, string userId)
+        public async Task<CreateOrganizationResult> CreateOrganisationAsync(CreateOrganizationRequest request, string createdBy)
         {
-            var createdOrg = await _orgRepository.CreateAsync(org);
-          //  await _orgRepository.AddUserToOrganizationAsync(createdOrg.OrgId, userId);
-            return createdOrg;
+            if (string.IsNullOrEmpty(createdBy))
+            {
+                return new CreateOrganizationResult
+                {
+                    Success = false,
+                    Message = "User ID is required"
+                };
+            }
+
+            var organization = new Organization
+            {
+                Name = request.Name,
+                Description = request.Description,
+                CreatedBy = createdBy,
+            };
+
+            try
+            {
+                var createdOrg = await _orgRepository.CreateOrganizationAsync(organization);
+                return new CreateOrganizationResult
+                {
+                    Success = true,
+                    Message = "Organisation created successfully",
+                    Organization = createdOrg
+                };
+            }
+            catch (Exception ex)
+            {
+                return new CreateOrganizationResult
+                {
+                    Success = false,
+                    Message = "An error occurred while creating the organization"
+                };
+            }
         }
 
-        public async Task AddUserToOrganizationAsync(string orgId, string userId)
+
+        public async Task<AddUserToOrganizationResponse> AddUserToOrganizationAsync(string orgId, AddUserToOrganizationRequest request, string userId)
         {
-            await _orgRepository.AddUserToOrganizationAsync(orgId, userId);
+            if (string.IsNullOrEmpty(request.UserId))
+            {
+                return new AddUserToOrganizationResponse { Message = "User ID is required" };
+            }
+
+            var organization = await _orgRepository.GetOrganizationByIdAsync(orgId, userId);
+            if (organization == null)
+            {
+                return new AddUserToOrganizationResponse { Message = "Organization not found or you don't have access" };
+            }
+
+            await _orgRepository.AddUserToOrganizationAsync(orgId, request.UserId);
+
+            return new AddUserToOrganizationResponse { Message = "User added to organisation successfully" };
         }
+
     }
 }
+

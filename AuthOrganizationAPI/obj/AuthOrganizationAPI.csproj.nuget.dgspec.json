@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\HNG INTERNSHIP\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj": {}
+    "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive\\Desktop\\HNG INTERNSHIP\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj": {
+    "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\HNG INTERNSHIP\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
         "projectName": "AuthOrganizationAPI",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\HNG INTERNSHIP\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\HNG INTERNSHIP\\AuthOrganizationAPI\\AuthOrganizationAPI\\obj\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,6 +81,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.6, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

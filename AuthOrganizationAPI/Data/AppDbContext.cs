@@ -13,12 +13,10 @@ namespace AuthOrganizationAPI.Data
 
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<UserOrganization> UserOrganizations { get; set; }
+        public DbSet<AppUser> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            // Configure UserOrganization relationship
             modelBuilder.Entity<UserOrganization>()
                 .HasKey(uo => new { uo.UserId, uo.OrganizationId });
 
@@ -31,6 +29,9 @@ namespace AuthOrganizationAPI.Data
                 .HasOne(uo => uo.Organization)
                 .WithMany(o => o.UserOrganizations)
                 .HasForeignKey(uo => uo.OrganizationId);
+
+            base.OnModelCreating(modelBuilder);
         }
+
     }
 }

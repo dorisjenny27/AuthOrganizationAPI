@@ -1,5 +1,7 @@
 ﻿using AuthOrganizationAPI.Helpers;
+using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AuthOrganizationAPI.Services.Interfaces
 {
@@ -8,18 +10,7 @@ namespace AuthOrganizationAPI.Services.Interfaces
         Task<PagedResult<Organization>> GetUserOrganizationsAsync(string userId, int pageNumber, int pageSize);
         Task CreateOrganizationAsync(Organization organization);
         Task<Organization> GetOrganizationByIdAsync(string orgId, string userId);
-
-
-
-
-
-
-
-
-
-
-
-        Task<Organization> CreateOrganizationAsync(Organization org, string userId);
-        Task AddUserToOrganizationAsync(string orgId, string userId);
+        Task<CreateOrganizationResult> CreateOrganisationAsync(CreateOrganizationRequest request, string createdBy);
+        Task<AddUserToOrganizationResponse> AddUserToOrganizationAsync(string orgId, AddUserToOrganizationRequest request, string userId);
     }
 }

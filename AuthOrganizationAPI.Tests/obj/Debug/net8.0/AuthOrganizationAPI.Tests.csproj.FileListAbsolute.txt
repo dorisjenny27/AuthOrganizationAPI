@@ -224,3 +224,5 @@ C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganization
 C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganizationAPI.Tests\obj\Debug\net8.0\AuthOrganizationAPI.Tests.pdb
 C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganizationAPI.Tests\obj\Debug\net8.0\AuthOrganizationAPI.Tests.genruntimeconfig.cache
 C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganizationAPI.Tests\obj\Debug\net8.0\ref\AuthOrganizationAPI.Tests.dll
+C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganizationAPI.Tests\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\HP\OneDrive\Desktop\HNG INTERNSHIP\AuthOrganizationAPI\AuthOrganizationAPI.Tests\bin\Debug\net8.0\Moq.dll

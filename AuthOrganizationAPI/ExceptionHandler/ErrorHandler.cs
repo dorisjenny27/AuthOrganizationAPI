@@ -40,32 +40,6 @@ namespace AuthOrganizationAPI.ExceptionHandler
             {
                 StatusCode = statusCode
             };
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        return new ObjectResult(new
-        {
-            status = "Bad request",
-            message = $"Registration unsuccessful. {message}",
-            statusCode
-        })
-        {
-            StatusCode = statusCode
-        };
-        */
-    }
+        }
     }
 }

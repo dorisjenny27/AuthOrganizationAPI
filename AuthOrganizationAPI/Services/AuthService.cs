@@ -15,52 +15,70 @@ namespace AuthOrganizationAPI.Services
     public class AuthService : IAuthService
     {
         private readonly UserManager<AppUser> _userManager;
-       // private readonly IOrganizationRepository _orgRepository;
+        // private readonly IOrganizationRepository _orgRepository;
         private readonly IConfiguration _configuration;
         private readonly IOrganizationService _organizationService;
 
         public AuthService(UserManager<AppUser> userManager, IConfiguration configuration, IOrganizationService organizationService)
         {
             _userManager = userManager;
-         //   _orgRepository = orgRepository;
+            //   _orgRepository = orgRepository;
             _configuration = configuration;
             _organizationService = organizationService;
         }
 
-        public async Task<(string Token, ObjectResult Error)> RegisterUserAsync(AppUser user, string password)
+        public async Task<RegisterUserResponse> RegisterUserAsync(AppUser user, string password)
         {
             var result = await _userManager.CreateAsync(user, password);
+
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return (null, ErrorHandler.GetErrorResponse(errors, StatusCodes.Status400BadRequest));
+                return new RegisterUserResponse
+                {
+                    Error = ErrorHandler.GetErrorResponse(errors, StatusCodes.Status400BadRequest)
+                };
             }
+
             var organizationName = $"{user.FirstName}'s Organisation";
-            var org = new Organization
+            var createOrgRequest = new CreateOrganizationRequest
             {
                 Name = organizationName,
                 Description = $"Default organization for {user.FirstName} {user.LastName}",
                 CreatedBy = user.Id
             };
-            await _organizationService.CreateOrganizationAsync(org);
-           // await _orgRepository.AddUserToOrganizationAsync(org.OrganizationId, user.Id);
+
+            await _organizationService.CreateOrganisationAsync(createOrgRequest, user.Id);
 
             var token = GenerateJwtToken(user);
-            return (token, null);
-        }
+            return new RegisterUserResponse
+            {
+                Token = token
+            };
+        } 
 
 
 
-        public async Task<(string Token, AppUser User, ObjectResult Error)> LoginAsync(string email, string password)
+
+    public async Task<LoginResult> LoginAsync(string email, string password)
         {
             var user = await _userManager.FindByEmailAsync(email);
+
             if (user == null || !await _userManager.CheckPasswordAsync(user, password))
             {
-                return (null, null, ErrorHandler.GetErrorResponse("Invalid email or password", StatusCodes.Status401Unauthorized));
+                return new LoginResult
+                {
+                    Error = ErrorHandler.GetErrorResponse("Invalid email or password", StatusCodes.Status401Unauthorized)
+                };
             }
 
             var token = GenerateJwtToken(user);
-            return (token, user, null);
+
+            return new LoginResult
+            {
+                Token = token,
+                User = user
+            };
         }
 
 

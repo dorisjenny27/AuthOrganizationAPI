@@ -17,17 +17,16 @@ namespace AuthOrganizationAPI.Repositories
 
         public async Task<Organization> GetOrganizationByIdAsync(string orgId, string userId)
         {
+            if (!Guid.TryParse(orgId, out _))
+            {
+                return null;
+            }
             var organization = await _context.Organizations
-                .Where(o => o.OrganizationId.ToString() == orgId && o.CreatedBy == userId)
+                .Where(o => o.OrganizationId == orgId && o.CreatedBy == userId)
                 .FirstOrDefaultAsync();
 
             return organization;
         }
-
-        //public async Task<Organization> GetByIdAsync(string orgId)
-        //{
-        //    return await _context.Organizations.FindAsync(orgId);
-        //}
 
         public async Task<IEnumerable<Organization>> GetUserOrganizationsAsync(string userId)
         {
@@ -39,7 +38,6 @@ namespace AuthOrganizationAPI.Repositories
             return userOrganizations;
         }
 
-
         public async Task<IEnumerable<Organization>> GetOwnedOrganizationsAsync(string userId)
         {
             var ownedOrganizations = await _context.Organizations
@@ -50,10 +48,11 @@ namespace AuthOrganizationAPI.Repositories
         }
 
 
-        public async Task CreateOrganizationAsync(Organization organization)
+        public async Task<Organization> CreateOrganizationAsync(Organization organization)
         {
             await _context.Organizations.AddAsync(organization);
             await _context.SaveChangesAsync();
+            return organization;
         }
 
 
@@ -64,12 +63,16 @@ namespace AuthOrganizationAPI.Repositories
             return org;
         }
 
-        public async Task AddUserToOrganizationAsync(string orgId, string userId)
+
+
+        public async Task AddUserToOrganizationAsync(string organizationId, string userId)
         {
-           // var userOrg = new Organization { Id = userId, OrgId = orgId };
-         //   await _context.Organizations.AddAsync(userOrg);
+            var userOrg = new UserOrganization { UserId = userId, OrganizationId = organizationId };
+            await _context.UserOrganizations.AddAsync(userOrg);
             await _context.SaveChangesAsync();
         }
-        
+
+
+
     }
 }

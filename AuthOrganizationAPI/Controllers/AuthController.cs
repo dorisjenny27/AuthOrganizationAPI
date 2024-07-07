@@ -31,9 +31,9 @@ namespace AuthOrganizationAPI.Controllers
                     LastName = model.LastName,
                     PhoneNumber = model.Phone,
                 };
-                var (token, error) = await _authService.RegisterUserAsync(user, model.Password);
-                if (error != null)
-                    return error;
+                var registerUserResponse = await _authService.RegisterUserAsync(user, model.Password);
+                if (registerUserResponse.Error != null)
+                    return registerUserResponse.Error;
 
                 return StatusCode(StatusCodes.Status201Created, new
                 {
@@ -41,7 +41,7 @@ namespace AuthOrganizationAPI.Controllers
                     message = "Registration successful",
                     data = new
                     {
-                        accessToken = token,
+                        accessToken = registerUserResponse.Token,
                         user = new
                         {
                             userId = user.Id,
@@ -58,16 +58,17 @@ namespace AuthOrganizationAPI.Controllers
                 return ErrorHandler.GetErrorResponse(ex.Message, StatusCodes.Status500InternalServerError);
             }
         }
+ 
 
-        [HttpPost("login")]
+    [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             try
             {
-                var (token, user, error) = await _authService.LoginAsync(model.Email, model.Password);
+                var loginResult = await _authService.LoginAsync(model.Email, model.Password);
 
-                if (error != null)
-                    return error;
+                if (loginResult.Error != null)
+                    return loginResult.Error;
 
                 return Ok(new
                 {
@@ -75,14 +76,14 @@ namespace AuthOrganizationAPI.Controllers
                     message = "Login successful",
                     data = new
                     {
-                        accessToken = token,
+                        accessToken = loginResult.Token,
                         user = new
                         {
-                            userId = user.Id,
-                            firstName = user.FirstName,
-                            lastName = user.LastName,
-                            email = user.Email,
-                            phone = user.PhoneNumber
+                            userId = loginResult.User.Id,
+                            firstName = loginResult.User.FirstName,
+                            lastName = loginResult.User?.LastName,
+                            email = loginResult.User?.Email,
+                            phone = loginResult.User.PhoneNumber
                         }
                     }
                 });

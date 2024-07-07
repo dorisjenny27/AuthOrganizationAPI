@@ -1,5 +1,7 @@
-﻿using AuthOrganizationAPI.Models.DTOs;
+﻿using AuthOrganizationAPI.ExceptionHandler;
+using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
+using AuthOrganizationAPI.Services;
 using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -8,8 +10,9 @@ using System.Security.Claims;
 
 namespace AuthOrganizationAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
     public class OrganizationController : ControllerBase
     {
         private readonly IOrganizationService _orgService;
@@ -19,7 +22,6 @@ namespace AuthOrganizationAPI.Controllers
             _orgService = orgService;
         }
 
-        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetUserOrganizations([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
@@ -50,7 +52,6 @@ namespace AuthOrganizationAPI.Controllers
         }
 
 
-        [Authorize]
         [HttpGet("{orgId}")]
         public async Task<IActionResult> GetOrganizationById(string orgId)
         {
@@ -77,19 +78,93 @@ namespace AuthOrganizationAPI.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrganization([FromBody] CreateOrgModel model)
+        public async Task<IActionResult> CreateOrganisation([FromBody] CreateOrganizationRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new
+                {
+                    Status = "Bad Request",
+                    Message = "Client error",
+                    StatusCode = StatusCodes.Status400BadRequest
+                });
+            }
+
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var org = new Organization { Name = model.Name, Description = model.Description };
-            var createdOrg = await _orgService.CreateOrganizationAsync(org, userId);
-            return CreatedAtAction(nameof(GetUserOrganizations), new { id = createdOrg.OrganizationId }, createdOrg);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return BadRequest(new
+                {
+                    status = "Bad Request",
+                    message = "User not authenticated",
+                    statusCode = StatusCodes.Status400BadRequest
+                });
+            }
+
+         //   request.CreatedBy = userId;
+
+
+            var result = await _orgService.CreateOrganisationAsync(request, userId);
+
+            if (!result.Success)
+            {
+                return BadRequest(new
+                {
+                    Status = "Bad Request",
+                    Message = result.Message,
+                    StatusCode = StatusCodes.Status400BadRequest
+                });
+            }
+
+
+            return StatusCode(StatusCodes.Status201Created, new
+            {
+                Status = "success",
+                Message = result.Message,
+                Data = new
+                {
+                    OrgId = result.Organization.OrganizationId,
+                    Name = result.Organization.Name,
+                    Description = result.Organization.Description,
+                }
+            });
         }
 
+
+        [AllowAnonymous]
         [HttpPost("{orgId}/users")]
-        public async Task<IActionResult> AddUserToOrganization(string orgId, [FromBody] AddUserModel model)
+        public async Task<IActionResult> AddUserToOrganization(string orgId, [FromBody] AddUserToOrganizationRequest request)
         {
-            await _orgService.AddUserToOrganizationAsync(orgId, model.UserId);
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new
+                {
+                    status = "Bad Request",
+                    message = "Invalid request data",
+                    statusCode = StatusCodes.Status400BadRequest
+                });
+            }
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var response = await _orgService.AddUserToOrganizationAsync(orgId, request, userId);
+
+            if (response.Message != "User added to organisation successfully")
+            {
+                return BadRequest(new
+                {
+                    status = "Bad Request",
+                    message = response.Message,
+                    statusCode = StatusCodes.Status400BadRequest
+                });
+            }
+
+            return Ok(new
+            {
+                status = "success",
+                message = response.Message
+            });
         }
+
     }
 }

@@ -11,9 +11,6 @@ namespace AuthOrganizationAPI.Models.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public string CreatedBy { get; set; }
-        // [ForeignKey("UserId")]
-        // public string Id { get; set; }
-        // public AppUser AppUser { get; set; }
         public ICollection<UserOrganization> UserOrganizations { get; set; }
     }
 }
