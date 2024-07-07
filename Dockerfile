@@ -9,17 +9,15 @@ EXPOSE 8080
 EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0-nanoserver-1809 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["AuthOrganizationAPI.csproj", "AuthOrganizationAPI/"]
-RUN dotnet restore "./AuthOrganizationAPI/AuthOrganizationAPI.csproj"
+COPY ["AuthOrganizationAPI/AuthOrganizationAPI.csproj", "AuthOrganizationAPI/"]
+RUN dotnet restore "AuthOrganizationAPI/AuthOrganizationAPI.csproj"
 COPY . .
 WORKDIR "/src/AuthOrganizationAPI"
-RUN dotnet build "./AuthOrganizationAPI.csproj" -c %BUILD_CONFIGURATION% -o /app/build
+RUN dotnet build "AuthOrganizationAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./AuthOrganizationAPI.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "AuthOrganizationAPI.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
