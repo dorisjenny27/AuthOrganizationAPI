@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AuthOrganizationAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240706213133_AddCreatedByToOrganization")]
-    partial class AddCreatedByToOrganization
+    [Migration("20240708230747_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

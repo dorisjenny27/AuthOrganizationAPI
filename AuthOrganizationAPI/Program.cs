@@ -30,7 +30,13 @@ namespace AuthOrganizationAPI
             {
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));  
                // options.UseSqlServer(builder.Configuration.GetConnectionString("LocalConnection"));
-            });  
+            });
+
+            builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(options =>
+            {
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+
 
             builder.Services.AddIdentity<AppUser, IdentityRole>()
               .AddEntityFrameworkStores<AppDbContext>();
