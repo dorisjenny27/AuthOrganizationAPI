@@ -45,7 +45,7 @@ namespace AuthOrganizationAPI.Services
             {
                 Name = organizationName,
                 Description = $"Default organization for {user.FirstName} {user.LastName}",
-                CreatedBy = user.Id
+                //CreatedBy = user.Id
             };
 
             await _organizationService.CreateOrganisationAsync(createOrgRequest, user.Id);

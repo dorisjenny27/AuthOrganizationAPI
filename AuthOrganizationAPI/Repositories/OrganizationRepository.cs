@@ -71,8 +71,5 @@ namespace AuthOrganizationAPI.Repositories
             await _context.UserOrganizations.AddAsync(userOrg);
             await _context.SaveChangesAsync();
         }
-
-
-
     }
 }

@@ -1,12 +1,13 @@
 ﻿using AuthOrganizationAPI.ExceptionHandler;
 using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
+using AuthOrganizationAPI.Services;
 using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthOrganizationAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -21,6 +22,16 @@ namespace AuthOrganizationAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                var errorMessage = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).FirstOrDefault();
+                return StatusCode(StatusCodes.Status422UnprocessableEntity, new RegisterResponseModel
+                {
+                    Status = "error",
+                    Message = errorMessage
+                });
+            }
+
             try
             {
                 var user = new AppUser
@@ -31,36 +42,52 @@ namespace AuthOrganizationAPI.Controllers
                     LastName = model.LastName,
                     PhoneNumber = model.Phone,
                 };
-                var registerUserResponse = await _authService.RegisterUserAsync(user, model.Password);
-                if (registerUserResponse.Error != null)
-                    return registerUserResponse.Error;
 
-                return StatusCode(StatusCodes.Status201Created, new
+                var registerUserResponse = await _authService.RegisterUserAsync(user, model.Password);
+
+                if (registerUserResponse.Error != null)
                 {
-                    status = "success",
-                    message = "Registration successful",
-                    data = new
+                    if (registerUserResponse.Error is ObjectResult badRequestResult)
                     {
-                        accessToken = registerUserResponse.Token,
-                        user = new
+                        return StatusCode(badRequestResult.StatusCode.Value, badRequestResult.Value);
+                    }
+                }
+
+                return StatusCode(StatusCodes.Status201Created, new RegisterResponseModel
+                {
+                    Status = "success",
+                    Message = "Registration successful",
+                    Data = new RegisterData
+                    {
+                        AccessToken = registerUserResponse.Token,
+                        User = new RegisterUserDTO
                         {
-                            userId = user.Id,
-                            firstName = user.FirstName,
-                            lastName = user.LastName,
-                            email = user.Email,
-                            phone = user.PhoneNumber
+                            UserId = user.Id,
+                            FirstName = user.FirstName,
+                            LastName = user.LastName,
+                            Email = user.Email,
+                            Phone = user.PhoneNumber
                         }
                     }
                 });
             }
             catch (Exception ex)
             {
-                return ErrorHandler.GetErrorResponse(ex.Message, StatusCodes.Status500InternalServerError);
+                // Log the exception for debugging purposes
+                Console.WriteLine($"Exception in Register method: {ex.Message}");
+
+                // Return a generic server error response
+                return StatusCode(StatusCodes.Status500InternalServerError, new RegisterResponseModel
+                {
+                    Status = "error",
+                    Message = "An error occurred while processing your request."
+                });
             }
         }
- 
 
-    [HttpPost("login")]
+
+
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             try
@@ -70,20 +97,20 @@ namespace AuthOrganizationAPI.Controllers
                 if (loginResult.Error != null)
                     return loginResult.Error;
 
-                return Ok(new
+                return Ok(new RegisterResponseModel
                 {
-                    status = "success",
-                    message = "Login successful",
-                    data = new
+                    Status = "success",
+                    Message = "Login successful",
+                    Data = new RegisterData
                     {
-                        accessToken = loginResult.Token,
-                        user = new
+                        AccessToken = loginResult.Token,
+                        User = new RegisterUserDTO
                         {
-                            userId = loginResult.User.Id,
-                            firstName = loginResult.User.FirstName,
-                            lastName = loginResult.User?.LastName,
-                            email = loginResult.User?.Email,
-                            phone = loginResult.User.PhoneNumber
+                            UserId = loginResult.User.Id,
+                            FirstName = loginResult.User.FirstName,
+                            LastName = loginResult.User?.LastName,
+                            Email = loginResult.User?.Email,
+                            Phone = loginResult.User.PhoneNumber
                         }
                     }
                 });

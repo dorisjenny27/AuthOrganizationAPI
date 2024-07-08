@@ -1,60 +1,59 @@
 using AuthOrganizationAPI.Controllers;
 using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
+using AuthOrganizationAPI.Services;
 using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Moq;
 
-namespace AuthOrganizationAPI.Tests
+namespace AuthOrganizationAPI.Tests.tests
 {
-    public class UnitTest1
+    public class AuthControllerTests
     {
-        public class AuthControllerTests
+        [Fact]
+        public async Task Register_ShouldCreateUserWithDefaultOrganization()
         {
-            [Fact]
-            public async Task Register_ShouldCreateUserWithDefaultOrganization()
+            // Arrange
+            var registerModel = new RegisterModel
             {
-                // Arrange
-                var registerModel = new RegisterModel
-                {
-                    Email = "john@example.com",
-                    Password = "StrongPassword123!",
-                    FirstName = "John",
-                    LastName = "Doe",
-                    Phone = "1234567890"
-                };
+                Email = "john@example.com",
+                Password = "StrongPassword123!",
+                FirstName = "John",
+                LastName = "Doe",
+                Phone = "1234567890"
+            };
 
-                var mockAuthService = new Mock<IAuthService>();
-                mockAuthService.Setup(x => x.RegisterUserAsync(It.IsAny<AppUser>(), It.IsAny<string>()))
-                    .ReturnsAsync(new RegisterUserResponse { Token = "fake_token" });
+            var mockAuthService = new Mock<IAuthService>();
+            mockAuthService.Setup(x => x.RegisterUserAsync(It.IsAny<AppUser>(), It.IsAny<string>()))
+                .ReturnsAsync(new RegisterUserResponse { Token = "fake_token" });
 
-                var controller = new AuthController(mockAuthService.Object);
+            var controller = new AuthController(mockAuthService.Object);
 
-                // Act
-                var result = await controller.Register(registerModel) as ObjectResult;
+            // Act
+            var result = await controller.Register(registerModel) as ObjectResult;
 
-                // Assert
-                Assert.NotNull(result); // Ensure the result is not null
-                Assert.Equal(StatusCodes.Status201Created, result.StatusCode);
+            // Assert
+            Assert.NotNull(result); // Ensure the result is not null
+            Assert.Equal(StatusCodes.Status201Created, result.StatusCode);
 
-                var responseBody = result.Value as dynamic;
-                Assert.NotNull(responseBody); // Ensure the response body is not null
+            var responseBody = result.Value as RegisterResponseModel;
+            Assert.NotNull(responseBody); // Ensure the response body is not null
 
-                // Assert response values
-                Assert.Equal("success", (string)responseBody.status);
-                Assert.Equal("Registration successful", (string)responseBody.message);
-                Assert.Equal("fake_token", (string)responseBody.data.accessToken);
-                Assert.Equal("john@example.com", (string)responseBody.data.user.email);
-                Assert.Equal("John", (string)responseBody.data.user.firstName);
-                Assert.Equal("Doe", (string)responseBody.data.user.lastName);
-                Assert.Equal("1234567890", (string)responseBody.data.user.phone);
-            }
+            // Assert response values
+            Assert.Equal("success", responseBody.Status);
+            Assert.Equal("Registration successful", responseBody.Message);
+            Assert.Equal("fake_token", responseBody.Data.AccessToken);
+            Assert.Equal("john@example.com", responseBody.Data.User.Email);
+            Assert.Equal("John", responseBody.Data.User.FirstName);
+            Assert.Equal("Doe", responseBody.Data.User.LastName);
+            Assert.Equal("1234567890", responseBody.Data.User.Phone);
         }
 
 
 
-        
         [Fact]
         public async Task Login_ShouldSucceedWithValidCredentials()
         {
@@ -88,12 +87,13 @@ namespace AuthOrganizationAPI.Tests
             Assert.NotNull(result);
             Assert.Equal(StatusCodes.Status200OK, result.StatusCode);
 
-            var responseBody = result.Value as dynamic;
-            Assert.Equal("success", responseBody.status);
-            Assert.Equal("Login successful", responseBody.message);
-            Assert.Equal("fake_token", responseBody.data.accessToken);
-            Assert.Equal("john@example.com", responseBody.data.user.email);
+            var responseBody = result.Value as RegisterResponseModel;
+            Assert.Equal("success", responseBody.Status);
+            Assert.Equal("Login successful", responseBody.Message);
+            Assert.Equal("fake_token", responseBody.Data.AccessToken);
+            Assert.Equal("john@example.com", responseBody.Data.User.Email);
         }
+
 
         [Theory]
         [InlineData("", "Doe", "john@example.com", "StrongPassword123!", "First Name is required")]
@@ -113,7 +113,16 @@ namespace AuthOrganizationAPI.Tests
 
             var mockAuthService = new Mock<IAuthService>();
             var controller = new AuthController(mockAuthService.Object);
-            controller.ModelState.AddModelError("", expectedErrorMessage);
+
+            // Simulate model validation error
+            if (string.IsNullOrEmpty(firstName))
+                controller.ModelState.AddModelError(nameof(RegisterModel.FirstName), "First Name is required");
+            if (string.IsNullOrEmpty(lastName))
+                controller.ModelState.AddModelError(nameof(RegisterModel.LastName), "Last Name is required");
+            if (string.IsNullOrEmpty(email))
+                controller.ModelState.AddModelError(nameof(RegisterModel.Email), "Email is required");
+            if (string.IsNullOrEmpty(password))
+                controller.ModelState.AddModelError(nameof(RegisterModel.Password), "Password is required");
 
             // Act
             var result = await controller.Register(registerModel) as ObjectResult;
@@ -122,9 +131,10 @@ namespace AuthOrganizationAPI.Tests
             Assert.NotNull(result);
             Assert.Equal(StatusCodes.Status422UnprocessableEntity, result.StatusCode);
 
-            var responseBody = result.Value as dynamic;
-            Assert.Contains(expectedErrorMessage, responseBody.message);
+            var responseBody = result.Value as RegisterResponseModel;
+            Assert.Contains(expectedErrorMessage, responseBody.Message);
         }
+
 
         [Fact]
         public async Task Register_ShouldFailWithDuplicateEmail()
@@ -142,12 +152,14 @@ namespace AuthOrganizationAPI.Tests
             mockAuthService.Setup(x => x.RegisterUserAsync(It.IsAny<AppUser>(), It.IsAny<string>()))
                 .ReturnsAsync(new RegisterUserResponse
                 {
-                    Error = new BadRequestObjectResult(new
+                    Error = new ObjectResult(new RegisterResponseModel
                     {
-                        status = "error",
-                        message = "Email already exists",
-                        statusCode = StatusCodes.Status422UnprocessableEntity
+                        Status = "error",
+                        Message = "Email already exists"
                     })
+                    {
+                        StatusCode = StatusCodes.Status422UnprocessableEntity
+                    }
                 });
 
             var controller = new AuthController(mockAuthService.Object);
@@ -159,9 +171,9 @@ namespace AuthOrganizationAPI.Tests
             Assert.NotNull(result);
             Assert.Equal(StatusCodes.Status422UnprocessableEntity, result.StatusCode);
 
-            var responseBody = result.Value as dynamic;
-            Assert.Equal("error", responseBody.status);
-            Assert.Equal("Email already exists", responseBody.message);
+            var responseBody = result.Value as RegisterResponseModel;
+            Assert.Equal("error", responseBody.Status);
+            Assert.Equal("Email already exists", responseBody.Message);
         }
 
 
@@ -180,14 +192,20 @@ namespace AuthOrganizationAPI.Tests
 
             var mockAuthService = new Mock<IAuthService>();
             var mockOrgService = new Mock<IOrganizationService>();
+            var mockUserManager = UserManagerMockHelper.MockUserManager(new List<AppUser>());
 
             mockAuthService.Setup(x => x.RegisterUserAsync(It.IsAny<AppUser>(), It.IsAny<string>()))
                 .ReturnsAsync(new RegisterUserResponse { Token = "fake_token" });
 
             mockOrgService.Setup(x => x.CreateOrganisationAsync(It.IsAny<CreateOrganizationRequest>(), It.IsAny<string>()))
-                .ReturnsAsync(new CreateOrganizationResult { Success = true, Organization = new Organization { Name = "John's Organisation" } });
+                .ReturnsAsync(new CreateOrganizationResult { Success = true, Organization = new Organization { Name = "John's Organization" } });
 
-            var controller = new AuthController(mockAuthService.Object);
+            var authService = new AuthService(
+                mockUserManager.Object,
+                new Mock<IConfiguration>().Object,
+                mockOrgService.Object);
+
+            var controller = new AuthController(authService);
 
             // Act
             var result = await controller.Register(registerModel) as ObjectResult;
@@ -197,9 +215,13 @@ namespace AuthOrganizationAPI.Tests
             Assert.Equal(StatusCodes.Status201Created, result.StatusCode);
 
             mockOrgService.Verify(x => x.CreateOrganisationAsync(
-                It.Is<CreateOrganizationRequest>(r => r.Name == "John's Organisation"),
+                It.Is<CreateOrganizationRequest>(r => r.Name == "John's Organization"),
                 It.IsAny<string>()), Times.Once);
         }
+
+
+
+
 
         [Fact]
         public async Task Login_ShouldFailWithInvalidCredentials()
@@ -240,19 +262,22 @@ namespace AuthOrganizationAPI.Tests
                 Email = "john@example.com",
                 Password = "StrongPassword123!",
                 FirstName = "John",
-                LastName = "Doe"
+                LastName = "Doe",
+                Phone = "1234567890"
             };
 
             var mockAuthService = new Mock<IAuthService>();
             mockAuthService.Setup(x => x.RegisterUserAsync(It.IsAny<AppUser>(), It.IsAny<string>()))
                 .ReturnsAsync(new RegisterUserResponse
                 {
-                    Error = new BadRequestObjectResult(new
+                    Error = new ObjectResult(new RegisterResponseModel
                     {
-                        status = "error",
-                        message = "User ID already exists",
-                        statusCode = StatusCodes.Status422UnprocessableEntity
+                        Status = "error",
+                        Message = "User ID already exists"
                     })
+                    {
+                        StatusCode = StatusCodes.Status422UnprocessableEntity
+                    }
                 });
 
             var controller = new AuthController(mockAuthService.Object);
@@ -264,11 +289,10 @@ namespace AuthOrganizationAPI.Tests
             Assert.NotNull(result);
             Assert.Equal(StatusCodes.Status422UnprocessableEntity, result.StatusCode);
 
-            var responseBody = result.Value as dynamic;
-            Assert.Equal("error", responseBody.status);
-            Assert.Equal("User ID already exists", responseBody.message);
+            var responseBody = result.Value as RegisterResponseModel;
+            Assert.Equal("error", responseBody.Status);
+            Assert.Equal("User ID already exists", responseBody.Message);
         }
 
-        
     }
 }

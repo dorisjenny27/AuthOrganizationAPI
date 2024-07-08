@@ -13,11 +13,11 @@ namespace AuthOrganizationAPI.Controllers
     [Authorize]
     [ApiController]
     [Route("api/[controller]")]
-    public class OrganizationController : ControllerBase
+    public class OrganizationsController : ControllerBase
     {
         private readonly IOrganizationService _orgService;
 
-        public OrganizationController(IOrganizationService orgService)
+        public OrganizationsController(IOrganizationService orgService)
         {
             _orgService = orgService;
         }
@@ -52,7 +52,7 @@ namespace AuthOrganizationAPI.Controllers
         }
 
 
-        [HttpGet("{orgId}")]
+        [HttpGet("orgId")]
         public async Task<IActionResult> GetOrganizationById(string orgId)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -101,8 +101,6 @@ namespace AuthOrganizationAPI.Controllers
                 });
             }
 
-         //   request.CreatedBy = userId;
-
 
             var result = await _orgService.CreateOrganisationAsync(request, userId);
 
@@ -132,7 +130,7 @@ namespace AuthOrganizationAPI.Controllers
 
 
         [AllowAnonymous]
-        [HttpPost("{orgId}/users")]
+        [HttpPost("orgId/users")]
         public async Task<IActionResult> AddUserToOrganization(string orgId, [FromBody] AddUserToOrganizationRequest request)
         {
             if (!ModelState.IsValid)

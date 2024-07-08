@@ -18,7 +18,7 @@ namespace AuthOrganizationAPI.Controllers
             _userManager = userManager;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("id")]
         public async Task<IActionResult> GetUserById(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
