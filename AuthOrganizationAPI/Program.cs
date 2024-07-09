@@ -19,12 +19,6 @@ namespace AuthOrganizationAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            //builder.Services.AddControllers(options =>
-            //{
-            //    // Register custom validation filter globally
-            //    options.Filters.Add<CustomValidationFilter>();
-            //});
-
             // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -32,11 +26,9 @@ namespace AuthOrganizationAPI
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IOrganizationService, OrganizationService>();
             builder.Services.AddScoped<IOrganizationRepository, OrganizationRepository>();
-        //    builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));  
-               // options.UseSqlServer(builder.Configuration.GetConnectionString("LocalConnection"));
             });
 
             builder.Services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(options =>
@@ -108,8 +100,6 @@ namespace AuthOrganizationAPI
                 //app.UseSwagger();
                 //app.UseSwaggerUI();
             }
-
-          //  app.UseMiddleware<CustomProblemDetailsMiddleware>();
 
             app.UseSwagger();
             app.UseSwaggerUI();
