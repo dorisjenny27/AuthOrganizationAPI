@@ -8,11 +8,6 @@
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>
 
-	<Target Name="PrePublishTarget" AfterTargets="Publish">
-		<Exec Command="dotnet ef database update" />
-	</Target>
-
-
 	<ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
