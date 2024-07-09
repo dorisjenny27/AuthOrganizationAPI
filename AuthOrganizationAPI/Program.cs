@@ -19,11 +19,11 @@ namespace AuthOrganizationAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllers(options =>
-            {
-                // Register custom validation filter globally
-                options.Filters.Add<CustomValidationFilter>();
-            });
+            //builder.Services.AddControllers(options =>
+            //{
+            //    // Register custom validation filter globally
+            //    options.Filters.Add<CustomValidationFilter>();
+            //});
 
             // Add services to the container.
             builder.Services.AddControllers();
@@ -109,7 +109,7 @@ namespace AuthOrganizationAPI
                 //app.UseSwaggerUI();
             }
 
-            app.UseMiddleware<CustomProblemDetailsMiddleware>();
+          //  app.UseMiddleware<CustomProblemDetailsMiddleware>();
 
             app.UseSwagger();
             app.UseSwaggerUI();
