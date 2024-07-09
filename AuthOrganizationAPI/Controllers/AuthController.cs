@@ -2,6 +2,7 @@
 using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
 using AuthOrganizationAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -72,9 +73,11 @@ namespace AuthOrganizationAPI.Controllers
 
                 if (registerUserResponse.Error != null)
                 {
-                    return StatusCode(StatusCodes.Status400BadRequest, new
+                    return BadRequest(new
                     {
-                        errors = new[] { new { field = "", message = registerUserResponse.Error.Value.ToString() } }
+                        status = "Bad request",
+                        message = "Registration unsuccessful",
+                        statusCode = 400
                     });
                 }
 
@@ -99,13 +102,11 @@ namespace AuthOrganizationAPI.Controllers
             catch (Exception ex)
             {
                 // Log the exception for debugging purposes
-                Console.WriteLine($"Exception in Register method: {ex.Message}");
-
-                // Return a generic server error response
-                return StatusCode(StatusCodes.Status500InternalServerError, new RegisterResponseModel
+                return BadRequest(new
                 {
-                    Status = "error",
-                    Message = "An error occurred while processing your request."
+                    status = "Bad request",
+                    message = "Registration unsuccessful",
+                    statusCode = 400
                 });
             }
         }
@@ -142,9 +143,11 @@ namespace AuthOrganizationAPI.Controllers
                 var loginResult = await _authService.LoginAsync(model.Email, model.Password);
 
                 if (loginResult.Error != null)
-                    return StatusCode(StatusCodes.Status401Unauthorized, new
+                    return BadRequest(new
                     {
-                        errors = new[] { new { field = "", message = loginResult.Error.Value.ToString() } }
+                        status = "Bad request",
+                        message = "Authentication failed",
+                        statusCode = 401
                     });
 
                 return Ok(new RegisterResponseModel
@@ -167,7 +170,13 @@ namespace AuthOrganizationAPI.Controllers
             }
             catch (Exception ex)
             {
-                return ErrorHandler.GetErrorResponse(ex.Message, StatusCodes.Status500InternalServerError);
+
+                return BadRequest(new
+                {
+                    status = "Bad request",
+                        message = "Authentication failed",
+                        statusCode = 401
+                    });
             }
         }
     }
