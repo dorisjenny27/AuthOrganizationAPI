@@ -3,140 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\controllers\\organizationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\controllers\\organizationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\authorganizationapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\authorganizationapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\helpers\\usermanagermockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\helpers\\usermanagermockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\services\\interfaces\\iorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\services\\interfaces\\iorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DD5E756-A88E-49C0-8264-0D3A0B3E2E80}|AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi.tests\\authorganizationapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4DD5E756-A88E-49C0-8264-0D3A0B3E2E80}|AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj|solutionrelative:authorganizationapi.tests\\authorganizationapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\migrations\\20240708230747_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\migrations\\20240708230747_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\addusertoorganizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\addusertoorganizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\addusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\addusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DD5E756-A88E-49C0-8264-0D3A0B3E2E80}|AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi.tests\\tests\\auth.spec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DD5E756-A88E-49C0-8264-0D3A0B3E2E80}|AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj|solutionrelative:authorganizationapi.tests\\tests\\auth.spec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\createorganizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\createorganizationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registeruserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registeruserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\userorganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\userorganization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\repositories\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\repositories\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\repositories\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\repositories\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\createorganizationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\createorganizationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\createorganisationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\createorganisationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\addusertoorganizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\addusertoorganizationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\createorgmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\createorgmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\controllers\\organisationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\controllers\\organisationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registeruserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registeruserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\createorganizationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\createorganizationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\exceptionhandler\\customvalidationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\exceptionhandler\\customvalidationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\exceptionhandler\\customproblemdetailsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\exceptionhandler\\customproblemdetailsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\models\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|c:\\users\\hp\\onedrive\\desktop\\project\\authorganizationapi\\authorganizationapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84208C46-C054-42BA-87A5-7512C7E46C0C}|AuthOrganizationAPI\\AuthOrganizationAPI.csproj|solutionrelative:authorganizationapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -155,313 +87,23 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 10,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\.gitignore",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\.gitignore",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\.gitignore",
-              "RelativeToolTip": "AuthOrganizationAPI\\.gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-08T23:36:52.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T23:32:49.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240708230747_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Migrations\\20240708230747_InitialMigration.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Migrations\\20240708230747_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Migrations\\20240708230747_InitialMigration.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Migrations\\20240708230747_InitialMigration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T23:07:47.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Program.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Program.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T23:00:03.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\appsettings.json",
-              "RelativeToolTip": "AuthOrganizationAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-08T22:53:25.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthOrganizationAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
-              "RelativeToolTip": "AuthOrganizationAPI\\AuthOrganizationAPI.csproj",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-08T22:15:32.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "AuthOrganizationAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-08T22:13:39.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T21:02:06.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrganizationsController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\OrganizationsController.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Controllers\\OrganizationsController.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\OrganizationsController.cs*",
-              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\OrganizationsController.cs*",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEEAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T19:58:21.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserOrganization.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\UserOrganization.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\UserOrganization.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\UserOrganization.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\UserOrganization.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:41:47.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:34:15.898Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserManagerMockHelper.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Helpers\\UserManagerMockHelper.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Helpers\\UserManagerMockHelper.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Helpers\\UserManagerMockHelper.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Helpers\\UserManagerMockHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Title": "RegisterData.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:56:35.791Z",
+              "WhenOpened": "2024-07-09T13:18:47.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IOrganizationService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Services\\Interfaces\\IOrganizationService.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Services\\Interfaces\\IOrganizationService.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Services\\Interfaces\\IOrganizationService.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Services\\Interfaces\\IOrganizationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:44:03.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IOrganizationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Repositories\\IOrganizationRepository.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Repositories\\IOrganizationRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Repositories\\IOrganizationRepository.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Repositories\\IOrganizationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:43:24.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AddUserToOrganizationResponse.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationResponse.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationResponse.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationResponse.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:47:15.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CreateOrganisationResult.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganisationResult.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganisationResult.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganisationResult.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganisationResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:47:14.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddUserToOrganizationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationRequest.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationRequest.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationRequest.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\AddUserToOrganizationRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:47:08.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddUserModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserModel.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\AddUserModel.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\AddUserModel.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\AddUserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:46:43.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateOrganizationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:43:43.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CreateOrganizationResult.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:43:41.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CreateOrgModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrgModel.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrgModel.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrgModel.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrgModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:43:39.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:43:38.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
               "Title": "LoginResult.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\LoginResult.cs",
               "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\LoginResult.cs",
@@ -469,111 +111,176 @@
               "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\LoginResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:43:35.375Z",
+              "WhenOpened": "2024-07-09T13:18:18.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:31:15.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RegisterData.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:30:38.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 6,
               "Title": "RegisterResponseModel.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterResponseModel.cs",
               "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterResponseModel.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterResponseModel.cs",
               "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:27:22.188Z",
+              "WhenOpened": "2024-07-09T13:18:04.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "DocumentIndex": 9,
+              "Title": "CreateOrganizationResult.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:26:50.33Z",
+              "WhenOpened": "2024-07-09T13:12:01.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 1,
+              "Title": "CreateOrganizationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\CreateOrganizationRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T13:09:58.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\LoginModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T13:08:40.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrganisationsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\OrganisationsController.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Controllers\\OrganisationsController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\OrganisationsController.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\OrganisationsController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAgwFEAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T12:17:00.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T12:08:30.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\ExceptionHandler\\CustomValidationFilter.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\ExceptionHandler\\CustomValidationFilter.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\ExceptionHandler\\CustomValidationFilter.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\ExceptionHandler\\CustomValidationFilter.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T10:55:29.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Program.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T10:32:21.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomProblemDetailsMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\ExceptionHandler\\CustomProblemDetailsMiddleware.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\ExceptionHandler\\CustomProblemDetailsMiddleware.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\ExceptionHandler\\CustomProblemDetailsMiddleware.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\ExceptionHandler\\CustomProblemDetailsMiddleware.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T10:31:39.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T09:52:47.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegisterUserResponse.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserResponse.cs",
               "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserResponse.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterUserResponse.cs",
               "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterUserResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:25:52.498Z",
+              "WhenOpened": "2024-07-09T09:52:25.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AuthOrganizationAPI.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj",
-              "RelativeToolTip": "AuthOrganizationAPI.Tests\\AuthOrganizationAPI.Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-08T15:05:29.351Z",
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\DTOs\\RegisterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T09:50:07.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OrganizationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Repositories\\OrganizationRepository.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Repositories\\OrganizationRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Repositories\\OrganizationRepository.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Repositories\\OrganizationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAJAAAA",
+              "DocumentIndex": 14,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Models\\Entities\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:52:22.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "OrganizationService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Services\\OrganizationService.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI\\Services\\OrganizationService.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Services\\OrganizationService.cs",
-              "RelativeToolTip": "AuthOrganizationAPI\\Services\\OrganizationService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAswBEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:47:07.953Z",
+              "WhenOpened": "2024-07-09T09:49:47.513Z",
               "EditorCaption": ""
             },
             {
@@ -584,35 +291,23 @@
               "RelativeDocumentMoniker": "AuthOrganizationAPI\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Services\\AuthService.cs",
               "RelativeToolTip": "AuthOrganizationAPI\\Services\\AuthService.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAQwC8AAAASAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwDkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:27:25.247Z",
+              "WhenOpened": "2024-07-09T09:48:46.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AuthOrganizationAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\AuthController.cs*",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthOrganizationAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAQwGMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:26:49.642Z",
+              "WhenOpened": "2024-07-09T09:48:03.171Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "auth.spec.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI.Tests\\tests\\auth.spec.cs",
-              "RelativeDocumentMoniker": "AuthOrganizationAPI.Tests\\tests\\auth.spec.cs",
-              "ToolTip": "C:\\Users\\HP\\OneDrive\\Desktop\\Project\\AuthOrganizationAPI\\AuthOrganizationAPI.Tests\\tests\\auth.spec.cs",
-              "RelativeToolTip": "AuthOrganizationAPI.Tests\\tests\\auth.spec.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAiwNwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:19:50.735Z"
             }
           ]
         }

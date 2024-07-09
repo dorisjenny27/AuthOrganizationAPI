@@ -1,9 +1,9 @@
 ﻿using AuthOrganizationAPI.ExceptionHandler;
 using AuthOrganizationAPI.Models.DTOs;
 using AuthOrganizationAPI.Models.Entities;
-using AuthOrganizationAPI.Services;
 using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace AuthOrganizationAPI.Controllers
 {
@@ -22,14 +22,39 @@ namespace AuthOrganizationAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            if (!ModelState.IsValid)
+            // VAlidate the model
+            var validationResults = new List<ValidationResult>();
+            var context = new ValidationContext(model,serviceProvider: null, items: null);
+            bool isValid = Validator.TryValidateObject(model, context, validationResults, true);
+
+            if (string.IsNullOrEmpty(model.FirstName))
             {
-                var errorMessage = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).FirstOrDefault();
-                return StatusCode(StatusCodes.Status422UnprocessableEntity, new RegisterResponseModel
+                validationResults.Add(new ValidationResult("Firstname must not be null", new[] { "FirstName" }));
+            }
+            if (string.IsNullOrEmpty(model.LastName))
+            {
+                validationResults.Add(new ValidationResult("Lastname must not be null", new[] { "LastName" }));
+            }
+            if (string.IsNullOrEmpty(model.Email))
+            {
+                validationResults.Add(new ValidationResult("Email must not be null", new[] { "Email" }));
+            }
+            if (string.IsNullOrEmpty(model.Password))
+            {
+                validationResults.Add(new ValidationResult("Password must not be null", new[] { "Password" }));
+            }
+            if (string.IsNullOrEmpty(model.Phone))
+            {
+                validationResults.Add(new ValidationResult("Phone must not be null", new[] { "Phone" }));
+            }
+            if(!isValid|| validationResults.Count > 0)
+            {
+                var errors = validationResults.Select(result => new
                 {
-                    Status = "error",
-                    Message = errorMessage
+                    field = result.MemberNames.FirstOrDefault(),
+                    message = result.ErrorMessage
                 });
+                return UnprocessableEntity(new {errors});
             }
 
             try
@@ -47,10 +72,10 @@ namespace AuthOrganizationAPI.Controllers
 
                 if (registerUserResponse.Error != null)
                 {
-                    if (registerUserResponse.Error is ObjectResult badRequestResult)
+                    return StatusCode(StatusCodes.Status400BadRequest, new
                     {
-                        return StatusCode(badRequestResult.StatusCode.Value, badRequestResult.Value);
-                    }
+                        errors = new[] { new { field = "", message = registerUserResponse.Error.Value.ToString() } }
+                    });
                 }
 
                 return StatusCode(StatusCodes.Status201Created, new RegisterResponseModel
@@ -90,12 +115,37 @@ namespace AuthOrganizationAPI.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            try
+            // VAlidate the model
+            var validationResults = new List<ValidationResult>();
+            var context = new ValidationContext(model, serviceProvider: null, items: null);
+            bool isValid = Validator.TryValidateObject(model, context, validationResults, true);
+
+            if (string.IsNullOrEmpty(model.Email))
+            {
+                validationResults.Add(new ValidationResult("Email must not be null", new[] { "Email" }));
+            }
+            if (string.IsNullOrEmpty(model.Password))
+            {
+                validationResults.Add(new ValidationResult("Password must not be null", new[] { "Password" }));
+            }
+            if (!isValid || validationResults.Count > 0)
+            {
+                var errors = validationResults.Select(result => new
+                {
+                    field = result.MemberNames.FirstOrDefault(),
+                    message = result.ErrorMessage
+                });
+                return UnprocessableEntity(new { errors });
+            }
+                try
             {
                 var loginResult = await _authService.LoginAsync(model.Email, model.Password);
 
                 if (loginResult.Error != null)
-                    return loginResult.Error;
+                    return StatusCode(StatusCodes.Status401Unauthorized, new
+                    {
+                        errors = new[] { new { field = "", message = loginResult.Error.Value.ToString() } }
+                    });
 
                 return Ok(new RegisterResponseModel
                 {

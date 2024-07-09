@@ -1,8 +1,11 @@
-﻿namespace AuthOrganizationAPI.Models.DTOs
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AuthOrganizationAPI.Models.DTOs
 {
     public class LoginModel
     {
         public string Email { get; set; }
+
         public string Password { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 using AuthOrganizationAPI.Data;
+using AuthOrganizationAPI.ExceptionHandler;
 using AuthOrganizationAPI.Models.Entities;
 using AuthOrganizationAPI.Repositories;
 using AuthOrganizationAPI.Services;
@@ -17,6 +18,12 @@ namespace AuthOrganizationAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddControllers(options =>
+            {
+                // Register custom validation filter globally
+                options.Filters.Add<CustomValidationFilter>();
+            });
 
             // Add services to the container.
             builder.Services.AddControllers();
@@ -101,6 +108,8 @@ namespace AuthOrganizationAPI
                 //app.UseSwagger();
                 //app.UseSwaggerUI();
             }
+
+            app.UseMiddleware<CustomProblemDetailsMiddleware>();
 
             app.UseSwagger();
             app.UseSwaggerUI();

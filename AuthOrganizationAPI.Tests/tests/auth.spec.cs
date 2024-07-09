@@ -114,7 +114,8 @@ namespace AuthOrganizationAPI.Tests.tests
             var mockAuthService = new Mock<IAuthService>();
             var controller = new AuthController(mockAuthService.Object);
 
-            // Simulate model validation error
+            // Simulate model
+            // error
             if (string.IsNullOrEmpty(firstName))
                 controller.ModelState.AddModelError(nameof(RegisterModel.FirstName), "First Name is required");
             if (string.IsNullOrEmpty(lastName))

@@ -9,16 +9,16 @@ namespace AuthOrganizationAPI.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;
 
-        public UserController(UserManager<AppUser> userManager)
+        public UsersController(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
         }
 
-        [HttpGet("id")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
             var user = await _userManager.FindByIdAsync(id);

@@ -6,6 +6,7 @@ using AuthOrganizationAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 
 namespace AuthOrganizationAPI.Controllers
@@ -13,11 +14,11 @@ namespace AuthOrganizationAPI.Controllers
     [Authorize]
     [ApiController]
     [Route("api/[controller]")]
-    public class OrganizationsController : ControllerBase
+    public class OrganisationsController : ControllerBase
     {
         private readonly IOrganizationService _orgService;
 
-        public OrganizationsController(IOrganizationService orgService)
+        public OrganisationsController(IOrganizationService orgService)
         {
             _orgService = orgService;
         }
@@ -52,7 +53,7 @@ namespace AuthOrganizationAPI.Controllers
         }
 
 
-        [HttpGet("orgId")]
+        [HttpGet("{orgId}")]
         public async Task<IActionResult> GetOrganizationById(string orgId)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -80,6 +81,30 @@ namespace AuthOrganizationAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateOrganisation([FromBody] CreateOrganizationRequest request)
         {
+
+            var validationResults = new List<ValidationResult>();
+            var context = new ValidationContext(request, serviceProvider: null, items: null);
+            bool isValid = Validator.TryValidateObject(request, context, validationResults, true);
+
+            if (string.IsNullOrEmpty(request.Name))
+            {
+                validationResults.Add(new ValidationResult("Name must not be null", new[] { "Name" }));
+            }
+            if (string.IsNullOrEmpty(request.Description))
+            {
+                validationResults.Add(new ValidationResult("Description must not be null", new[] { "Description" }));
+            }
+
+            if (!isValid || validationResults.Count > 0)
+            {
+                var errors = validationResults.Select(result => new
+                {
+                    field = result.MemberNames.FirstOrDefault(),
+                    message = result.ErrorMessage
+                });
+                return UnprocessableEntity(new { errors });
+            }
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(new
@@ -130,7 +155,7 @@ namespace AuthOrganizationAPI.Controllers
 
 
         [AllowAnonymous]
-        [HttpPost("orgId/users")]
+        [HttpPost("{orgId}/users")]
         public async Task<IActionResult> AddUserToOrganization(string orgId, [FromBody] AddUserToOrganizationRequest request)
         {
             if (!ModelState.IsValid)
