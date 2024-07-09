@@ -52,7 +52,7 @@ namespace AuthOrganizationAPI.Controllers
         }
 
 
-        [HttpGet("{orgId}")]
+        [HttpGet("orgId")]
         public async Task<IActionResult> GetOrganizationById(string orgId)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -130,7 +130,7 @@ namespace AuthOrganizationAPI.Controllers
 
 
         [AllowAnonymous]
-        [HttpPost("{orgId}/users")]
+        [HttpPost("orgId/users")]
         public async Task<IActionResult> AddUserToOrganization(string orgId, [FromBody] AddUserToOrganizationRequest request)
         {
             if (!ModelState.IsValid)
